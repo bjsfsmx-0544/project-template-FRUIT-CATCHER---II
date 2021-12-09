@@ -142,22 +142,12 @@ class Game{
             
 
 
-        // this.gameOver() {
-        //     textSize(40)
-        //     fill("white")
-        //  text("GAME OVER",displayWidth/2-400,displayHeight/2-200)
-        //     }
+       
 
-        // gameOver() {
-        //     textSize(40)
-        //     fill("white")
-        //     }
-
-        // gameOver() {
-        //     textSize(40)
-        //     fill("white")
-        //  text("GAME OVER",displayWidth/2-400,displayHeight/2-200)
-        //     }
+        gameOver() {
+        //     fill the white color
+        //  print the gameover message
+        }
             
 
 
