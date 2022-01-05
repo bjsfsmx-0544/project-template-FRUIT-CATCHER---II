@@ -1,10 +1,10 @@
 class Form{
     constructor(){
-       this.input = createInput("Name");
-       this.button = createButton('Play');
+       this.input = createInput("Nombre");
+       this.button = createButton('Jugador');
        this.greeting = createElement('h2');
        this.title = createElement('h2');
-       this.reset = createButton('Reset');
+       this.reset = createButton('Reiniciar');
     }
     hide() {
         this.greeting.hide();
@@ -13,7 +13,7 @@ class Form{
         this.title.hide();
     }
     display() {
-        this.title.html("FRUIT CATCHER");
+        this.title.html("ATRAPA FRUTA");
         this.title.position(350, 50);
         this.title.style('font-size', '70px');
         this.title.style('color', 'skyblue');
@@ -38,7 +38,7 @@ class Form{
             player.index = playerCount;
             player.update();
             player.updateCount(playerCount);
-            this.greeting.html("Hello " + player.name)
+            this.greeting.html("Hola, " + player.name)
             this.greeting.position(400,250);
             this.greeting.style('color', 'white');
             this.greeting.style('font-size', '100px');
@@ -46,16 +46,11 @@ class Form{
         this.reset.mousePressed(() => {
            
               database.ref("/").set({
-                  //set the intial value for carsAtEnd,playerCount,gameState,players
+                // Establece el valor inicial para carsAtEnd,playerCount,gameState y players
                  
                 });
-                //reload() the window
+                // Refresca la ventana con reload()
                 window.location.reload();
               });
-            }
-
-
-
-          }
-          
+            }      
 }
